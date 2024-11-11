@@ -49,10 +49,13 @@ export default {
         },
       },
       borderRadius: {
-        xl: "var(--radius-xl)",
-        lg: "var(--radius-l)",
-        md: "var(--radius-m)",
-        sm: "var(--radius-s)",
+        xl: "var(--_radius-xl)",
+        lg: "var(--_radius-l)",
+        md: "var(--_radius-m)",
+        sm: "var(--_radius-s)",
+      },
+      fontFamily: {
+        "Bai-Jamjuree": ["Bai Jamjuree", "sans-serif"],
       },
     },
   },
