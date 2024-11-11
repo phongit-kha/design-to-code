@@ -38,23 +38,26 @@ export function Profile() {
         <br /> Bangkok, Thailand
       </h6>
       <div className="flex justify-between">
-        <Button className={buttonStyle}>
+        <Button className={buttonStyle} aria-label="facebook contact">
           <Facebook />
         </Button>
-        <Button className={buttonStyle}>
+        <Button className={buttonStyle} aria-label="Gmail contact">
           <Mail />
         </Button>
-        <Button className={buttonStyle}>
+        <Button className={buttonStyle} aria-label="Gmail contact">
           <Github />
         </Button>
-        <Button className={buttonStyle}>
+        <Button className={buttonStyle} aria-label="Linked-in contact">
           <Linkedin />
         </Button>
-        <Button className={buttonStyle}>
+        <Button className={buttonStyle} aria-label="Resume information">
           <FileUser />
         </Button>
       </div>
-      <Button className="text-base-tint h-auto w-full rounded-md bg-gradient-to-r from-accent to-secondary py-2 text-lg font-bold transition-transform duration-300 hover:scale-105 focus:scale-110">
+      <Button
+        aria-label="go to contact phongit"
+        className="text-base-tint h-auto w-full rounded-md bg-gradient-to-r from-accent to-secondary py-2 text-lg font-bold transition-transform duration-300 hover:scale-105 focus:scale-110"
+      >
         Let's Work Together!
       </Button>
     </div>
