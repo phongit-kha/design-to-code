@@ -4,12 +4,9 @@ import { Button } from "./ui/button";
 
 import { Facebook, FileUser, Github, Linkedin, Mail } from "lucide-react";
 
-const buttonStyle: string =
-  "border-t-opp-medium size-10 border-[0.5px] transition-transform duration-300 hover:scale-110 focus:scale-110";
-
-export function Profile() {
+export function Profile(): React.JSX.Element {
   return (
-    <div className="bg-base-tint border-t-opp-medium m-4 h-auto w-80 space-y-3 rounded-3xl border-[0.5px] p-8">
+    <div className="m-4 h-auto w-80 space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8">
       <div className="flex">
         <Image
           className="rounded-sm"
@@ -29,37 +26,60 @@ export function Profile() {
         height={280}
         alt="tonnam profile picture"
       />
-      <h6 className="text-t-bright text-lg font-bold">
+      <h6 className="text-lg font-bold text-t-bright">
         <small className="text-t-medium">Specialization:</small>
         <br /> Fullstack Developer
       </h6>
-      <h6 className="text-t-bright text-lg font-bold">
+      <h6 className="text-lg font-bold text-t-bright">
         <small className="text-t-medium">Base in:</small>
         <br /> Bangkok, Thailand
       </h6>
       <div className="flex justify-between">
-        <Button className={buttonStyle} aria-label="facebook contact">
-          <Facebook />
-        </Button>
-        <Button className={buttonStyle} aria-label="Gmail contact">
-          <Mail />
-        </Button>
-        <Button className={buttonStyle} aria-label="Gmail contact">
-          <Github />
-        </Button>
-        <Button className={buttonStyle} aria-label="Linked-in contact">
-          <Linkedin />
-        </Button>
-        <Button className={buttonStyle} aria-label="Resume information">
-          <FileUser />
-        </Button>
+        <IconButton
+          icon="Facebook"
+          tooltip="Facebook"
+          label="facebook contact"
+        />
+        <IconButton icon="Mail" tooltip="Gmail" label="Gmail contact" />
+        <IconButton
+          icon="Linkedin"
+          tooltip="LinkedIn"
+          label="LinkedIn contact"
+        />
+        <IconButton icon="Github" tooltip="Github" label="Github Profile" />
+        <IconButton icon="FileUser" tooltip="Resume" label="Resume file" />
       </div>
       <Button
         aria-label="go to contact phongit"
-        className="text-base-tint h-auto w-full rounded-md bg-gradient-to-r from-accent to-secondary py-2 text-lg font-bold transition-transform duration-300 hover:scale-105 focus:scale-110"
+        className="h-auto w-full rounded-md bg-gradient-to-r from-accent to-secondary py-2 text-lg font-bold text-base-tint transition-transform duration-300 hover:scale-105 focus:scale-110"
       >
         Let's Work Together!
       </Button>
     </div>
   );
 }
+
+const IconButton = ({
+  icon,
+  tooltip,
+  label,
+}: {
+  icon: "Facebook" | "FileUser" | "Linkedin" | "Mail" | "Github";
+  tooltip: string;
+  label: string;
+}): React.JSX.Element => {
+  const buttonStyle: string =
+    "border-t-opp-medium size-10 border-[0.5px] transition-transform duration-300 hover:scale-110 focus:scale-110";
+  const Icon = {
+    Facebook: <Facebook />,
+    FileUser: <FileUser />,
+    Linkedin: <Linkedin />,
+    Github: <Github />,
+    Mail: <Mail />,
+  };
+  return (
+    <Button className={buttonStyle} aria-label="facebook contact">
+      {Icon[icon]}
+    </Button>
+  );
+};
