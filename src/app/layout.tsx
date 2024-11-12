@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-base antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} animate-fadeIn bg-base antialiased transition-all delay-300`}
       >
         <ThemeProvider
           attribute="class"
