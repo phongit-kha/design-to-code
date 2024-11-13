@@ -14,7 +14,7 @@ export function Profile({
   return (
     <div
       className={cn(
-        "m-4 h-auto min-w-80 space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8",
+        "h-auto min-w-80 space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8",
         className,
       )}
     >

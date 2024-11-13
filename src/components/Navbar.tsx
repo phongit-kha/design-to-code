@@ -52,7 +52,7 @@ export function Navbar({
             aria-label="Project"
             className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
           >
-            <LayoutGrid className="size-5 xl:hidden" />
+            <LayoutGrid className="size-5 stroke-[2px] xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
               Project
             </span>
