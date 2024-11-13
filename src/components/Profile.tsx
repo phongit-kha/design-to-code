@@ -2,11 +2,22 @@ import Image from "next/image";
 import * as React from "react";
 import { Button } from "./ui/button";
 
+import { cn } from "@/lib/utils";
+
 import { Facebook, FileUser, Github, Linkedin, Mail } from "lucide-react";
 
-export function Profile(): React.JSX.Element {
+export function Profile({
+  className = "",
+}: {
+  className?: string;
+}): React.JSX.Element {
   return (
-    <div className="m-4 h-auto w-80 space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8">
+    <div
+      className={cn(
+        "m-4 h-auto min-w-80 space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8",
+        className,
+      )}
+    >
       <div className="flex">
         <Image
           className="rounded-sm"
