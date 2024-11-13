@@ -113,7 +113,7 @@ export function ContactSection({
         </div>
 
         {/* Contact Message */}
-        <p className="mt-3 bg-gradient-to-r from-accent to-secondary bg-clip-text text-3xl font-extrabold leading-tight text-transparent lg:text-[54px]">
+        <p className="mt-3 bg-gradient-to-r from-accent to-secondary bg-clip-text text-3xl font-extrabold leading-tight text-transparent">
           Want to know more about me, tell me about your project or just to say
           hello? Drop me a line and I'll get back as soon as possible.
         </p>
