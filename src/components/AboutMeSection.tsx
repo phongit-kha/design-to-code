@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { ArrowDown, Download, LayoutGrid, Sparkles } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Tag } from "./ProjectCard";
 
 export function AboutMe({
   className = "",
@@ -63,28 +64,28 @@ export function AboutMe({
 
           {/* Contact Section */}
           <div className="space-y-4 lg:w-1/3">
-            <div>
-              <h3 className="text-sm text-t-bright">Name</h3>
+            <h6>
+              <small className="text-sm text-t-bright">Name</small>
               <p className="text-lg font-semibold text-t-bright">Alex Walker</p>
-            </div>
-            <div>
-              <h3 className="text-sm text-t-bright">Phone</h3>
+            </h6>
+            <h6>
+              <small className="text-sm text-t-bright">Phone</small>
               <p className="text-lg font-semibold text-t-bright">
                 +1 212-708-9400
               </p>
-            </div>
-            <div>
-              <h3 className="text-sm text-t-bright">Email</h3>
+            </h6>
+            <h6>
+              <small className="text-sm text-t-bright">Email</small>
               <p className="text-lg font-semibold text-t-bright">
                 hello@yourdomain.com
               </p>
-            </div>
-            <div>
-              <h3 className="text-sm text-t-bright">Location</h3>
+            </h6>
+            <h6>
+              <small className="text-sm text-t-bright">Location</small>
               <p className="text-lg font-semibold text-t-bright">
                 Odesa, Ukraine
               </p>
-            </div>
+            </h6>
           </div>
         </div>
 
@@ -96,6 +97,126 @@ export function AboutMe({
           >
             Download Resume <Download className="size-4 stroke-[3px]" />
           </Link>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 gap-8 text-t-bright lg:grid-cols-2 lg:py-12">
+        {/* Frontend Development Card */}
+        <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
+          <h4 className="text-2xl font-semibold text-t-bright">
+            Frontend development
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              UX/UI Design
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Design to Code
+            </Tag>
+          </div>
+          <p className="text-t-bright">
+            I work with HTML/CSS, Framer and WordPress.
+          </p>
+          <img
+            src="/path/to/frontend-image.png"
+            alt="Frontend Development"
+            className="w-full rounded-md"
+          />
+        </div>
+
+        {/* Digital Art and Graphic Design Card */}
+        <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
+          <h4 className="text-2xl font-semibold text-t-bright">
+            Digital art and graphic design
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Illustrations
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              AI Experiments
+            </Tag>
+          </div>
+          <p className="text-t-bright">
+            I use Adobe Photoshop, Fresco and Blender to create illustrations
+            and 3D renders for my clients and stocks.
+          </p>
+          <img
+            src="/path/to/design-image.png"
+            alt="Graphic Design"
+            className="w-full rounded-md"
+          />
+        </div>
+
+        {/* SEO/Digital Marketing Solutions Card */}
+        <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
+          <h4 className="text-2xl font-semibold text-t-bright">
+            SEO/Digital marketing solutions
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Social Media
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Analytics
+            </Tag>
+          </div>
+          <p className="text-t-bright">
+            Social media content plans, media monitoring, email and text
+            messaging and search engine optimization.
+          </p>
+          <img
+            src="/path/to/marketing-image.png"
+            alt="Marketing Solutions"
+            className="w-full rounded-md"
+          />
+        </div>
+
+        {/* Brand Identity Card */}
+        <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
+          <h4 className="text-2xl font-semibold text-t-bright">
+            Brand identity
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Logo Designs
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Style Guides
+            </Tag>
+          </div>
+          <p className="text-t-bright">
+            I help my clients to develop a personality and brand voice, design
+            the brand look and logo.
+          </p>
+          <img
+            src="/path/to/brand-image.png"
+            alt="Brand Identity"
+            className="w-full rounded-md"
+          />
         </div>
       </div>
     </div>
