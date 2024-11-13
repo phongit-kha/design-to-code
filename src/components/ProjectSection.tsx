@@ -3,6 +3,16 @@ import { cn } from "@/lib/utils";
 import { ArrowDown, Download, LayoutGrid, Sparkles } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { CardDetails, ProjectCard } from "./ProjectCard";
+
+const temp: CardDetails = {
+  projectName: "Project name",
+  tag: ["Illustration", "3D Render"],
+  tagColor: "white",
+  imgUrl: "/profile/profile-icon.jpg",
+  description:
+    "This action cannot be undone. This will permanently delete youraccount and remove your data from our servers.",
+};
 
 export function ProjectSection({
   className = "",
@@ -18,93 +28,11 @@ export function ProjectSection({
         Check out my featured projects
       </h2>
       <div className="mt-10 flex w-full flex-wrap items-center justify-center gap-8">
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag>Illustration</Tag>
-            <Tag>3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag color="white">Illustration</Tag>
-            <Tag color="white">3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag>Illustration</Tag>
-            <Tag>3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag color="white">Illustration</Tag>
-            <Tag color="white">3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag>Illustration</Tag>
-            <Tag>3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag color="white">Illustration</Tag>
-            <Tag color="white">3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag>Illustration</Tag>
-            <Tag>3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag color="white">Illustration</Tag>
-            <Tag color="white">3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag>Illustration</Tag>
-            <Tag>3D Render</Tag>
-          </figcaption>
-        </button>
-        <button className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
-          <figcaption className="flex gap-2 px-7 py-5">
-            <h5 className="hidden">Project name</h5>
-            <Tag color="white">Illustration</Tag>
-            <Tag color="white">3D Render</Tag>
-          </figcaption>
-        </button>
+        <ProjectCard cardDetails={temp} />
+        <ProjectCard cardDetails={temp} />
+        <ProjectCard cardDetails={temp} />
+        <ProjectCard cardDetails={temp} />
       </div>
     </div>
   );
 }
-
-const Tag = ({
-  color = "black",
-  children,
-}: {
-  color?: "white" | "black";
-  children: React.ReactNode;
-}): React.JSX.Element => {
-  return (
-    <span
-      className={`rounded-sm px-3 py-1.5 text-sm ${color === "black" ? "bg-base-opp text-t-opp-bright" : "bg-base text-t-bright"}`}
-    >
-      {children}
-    </span>
-  );
-};
