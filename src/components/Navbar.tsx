@@ -91,7 +91,7 @@ export function Navbar({
         <div className="lg:flex lg:space-x-4">
           <Button
             aria-label="Theme Toggle"
-            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 ${IconStyle}`}
+            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-110 ${IconStyle}`}
             onClick={() => {
               themeColor == "light" ? setTheme("light") : setTheme("dark");
               themeColor == "light"
@@ -106,7 +106,7 @@ export function Navbar({
           {/* Highlighted Chat Icon */}
           <Button
             aria-label="Chat"
-            className="size-auto rounded-[1.125rem] bg-gradient-to-tl from-accent to-secondary p-2.5 lg:rounded-md lg:px-5"
+            className="size-auto rounded-[1.125rem] bg-gradient-to-tl from-accent to-secondary p-2.5 transition-transform duration-300 focus-visible:scale-105 lg:rounded-md lg:px-5"
           >
             <span
               hidden
