@@ -70,7 +70,7 @@ export function ProjectCard({
   );
 }
 
-const Tag = ({
+export const Tag = ({
   color = "black",
   children,
   className,
