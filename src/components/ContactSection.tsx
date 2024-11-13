@@ -14,7 +14,7 @@ export function ContactSection({
       <p className="flex w-fit items-center gap-2 rounded-sm border border-t-opp-medium bg-base px-4 py-2 text-sm font-bold text-t-medium">
         <Sparkles className="size-4 stroke-2" /> Contact
       </p>
-      <h2 className="mt-3 bg-gradient-to-r from-accent to-secondary bg-clip-text text-4xl font-extrabold text-transparent">
+      <h2 className="mt-3 bg-gradient-to-r from-accent to-secondary bg-clip-text text-4xl font-extrabold leading-tight text-transparent lg:text-[54px]">
         Let's make something awesome together!
       </h2>
     </div>

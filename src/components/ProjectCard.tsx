@@ -30,7 +30,7 @@ export function ProjectCard({
 }): React.JSX.Element {
   return (
     <Dialog>
-      <DialogTrigger className="flex size-80 flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover">
+      <DialogTrigger className="flex aspect-square w-full flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover transition-all duration-300 ease-in hover:scale-105">
         <figcaption className="flex gap-2 px-7 py-5">
           <h5 className="hidden">{cardDetails.projectName}</h5>
           {cardDetails.tag.map((index, item) => (

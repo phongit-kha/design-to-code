@@ -31,7 +31,7 @@ export function Navbar({
   return (
     <nav
       className={cn(
-        "fixed bottom-5 z-50 flex h-auto w-full justify-center lg:sticky lg:top-4 lg:m-4",
+        "fixed bottom-5 left-0 z-50 flex h-auto w-full justify-center lg:sticky lg:top-12",
         className,
       )}
     >
@@ -40,7 +40,7 @@ export function Navbar({
         <div className="flex xl:space-x-5">
           <Button
             aria-label="Home"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 focus-visible:text-t-bright lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle}`}
           >
             <House className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -50,9 +50,9 @@ export function Navbar({
 
           <Button
             aria-label="Project"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
           >
-            <LayoutGrid className="size-5 stroke-[2px] xl:hidden" />
+            <LayoutGrid className="size-5 stroke-[2.5px] xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
               Project
             </span>
@@ -60,7 +60,7 @@ export function Navbar({
 
           <Button
             aria-label="About me"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
           >
             <UserRound className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -70,7 +70,7 @@ export function Navbar({
 
           <Button
             aria-label="Resume"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
           >
             <FileUser className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -80,7 +80,7 @@ export function Navbar({
 
           <Button
             aria-label="Contact Me"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
           >
             <Mail className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -91,7 +91,7 @@ export function Navbar({
         <div className="lg:flex lg:space-x-4">
           <Button
             aria-label="Theme Toggle"
-            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-transform duration-300 focus-visible:scale-110 ${IconStyle}`}
+            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-110 ${IconStyle}`}
             onClick={() => {
               themeColor == "light" ? setTheme("light") : setTheme("dark");
               themeColor == "light"
@@ -106,7 +106,7 @@ export function Navbar({
           {/* Highlighted Chat Icon */}
           <Button
             aria-label="Chat"
-            className="size-auto rounded-[1.125rem] bg-gradient-to-tl from-accent to-secondary p-2.5 transition-transform duration-300 focus-visible:scale-105 lg:rounded-md lg:px-5"
+            className="size-auto rounded-[1.125rem] bg-gradient-to-tl from-accent to-secondary p-2.5 transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:rounded-md lg:px-5"
           >
             <span
               hidden
