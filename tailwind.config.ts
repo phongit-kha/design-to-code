@@ -24,7 +24,7 @@ export default {
         stroke: {
           controls: {
             DEFAULT: "var(--stroke-controls)",
-            neutral: "var(--stroke-controls-neutral",
+            neutral: "var(--stroke-controls-neutral)",
           },
           elements: "var(--stroke-elements)",
         },
