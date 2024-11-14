@@ -13,7 +13,7 @@ const fadeInAnimationVariants = {
     y: 0,
     transition: {
       duration: 1,
-      delay: 0.1 * index,
+      delay: 0.125 * index,
     },
   }),
 };

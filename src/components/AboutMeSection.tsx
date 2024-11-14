@@ -107,6 +107,8 @@ export function AboutMe({
                   hello@yourdomain.com
                 </p>
               </h6>
+            </FadeInAnimation>
+            <FadeInAnimation index={6}>
               <h6>
                 <small className="text-sm text-t-bright">Location</small>
                 <p className="text-lg font-semibold text-t-bright">

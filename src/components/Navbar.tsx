@@ -20,7 +20,7 @@ import Link from "next/link";
 const IconStyle = (onFocus: boolean) =>
   onFocus
     ? "bg-base-opp text-t-opp-bright lg:bg-transparent lg:text-t-bright lg:border-[1px] border-stroke-controls-neutral whitespace-nowrap "
-    : "text-t-disabled lg:dark:text-t-bright whitespace-nowrap";
+    : "text-t-disabled lg:dark:text-t-bright whitespace-nowrap hover:text-t-bright";
 
 export function Navbar({
   className,
@@ -44,7 +44,7 @@ export function Navbar({
           <Link
             href="#home"
             aria-label="Home"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 focus-visible:text-t-bright lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle(activeSection === "home")}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-105 focus-visible:text-t-bright lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle(activeSection === "home")}`}
           >
             <House className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -55,7 +55,7 @@ export function Navbar({
           <Link
             href="#project"
             aria-label="Project"
-            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "projects")}`}
+            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "projects")}`}
           >
             <LayoutGrid className="size-5 stroke-[2.5px] xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -66,7 +66,7 @@ export function Navbar({
           <Link
             href="#about"
             aria-label="About me"
-            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "about")}`}
+            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "about")}`}
           >
             <UserRound className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -77,7 +77,7 @@ export function Navbar({
           <Link
             href="#resume"
             aria-label="Resume"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "resume")}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "resume")}`}
           >
             <FileUser className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -88,7 +88,7 @@ export function Navbar({
           <Link
             href="#contact"
             aria-label="Contact Me"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "contact")}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "contact")}`}
           >
             <Mail className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -99,7 +99,7 @@ export function Navbar({
         <div className="flex items-center lg:space-x-4">
           <Button
             aria-label="Theme Toggle"
-            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-110 ${IconStyle(false)}`}
+            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-110 ${IconStyle(false)}`}
             onClick={() => {
               themeColor == "light" ? setTheme("light") : setTheme("dark");
               themeColor == "light"
