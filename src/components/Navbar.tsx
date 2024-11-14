@@ -16,15 +16,17 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-const onFocus = false;
-const IconStyle = onFocus
-  ? "bg-base-opp text-t-opp-bright lg:bg-transparent lg:text-t-bright border-[1px] border-stroke-controls-neutral "
-  : "text-t-disabled lg:dark:text-t-bright";
+const IconStyle = (onFocus: boolean) =>
+  onFocus
+    ? "bg-base-opp text-t-opp-bright lg:bg-transparent lg:text-t-bright border-[1px] border-stroke-controls-neutral "
+    : "text-t-disabled lg:dark:text-t-bright";
 
 export function Navbar({
   className,
+  activeSection,
 }: {
   className?: string;
+  activeSection: string;
 }): React.JSX.Element {
   const { setTheme } = useTheme();
   const [themeColor, setThemeColor] = useState("light");
@@ -40,7 +42,7 @@ export function Navbar({
         <div className="flex xl:space-x-5">
           <Button
             aria-label="Home"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 focus-visible:text-t-bright lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 focus-visible:text-t-bright lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle(activeSection === "home")}`}
           >
             <House className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -50,7 +52,7 @@ export function Navbar({
 
           <Button
             aria-label="Project"
-            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "projects")}`}
           >
             <LayoutGrid className="size-5 stroke-[2.5px] xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -60,7 +62,7 @@ export function Navbar({
 
           <Button
             aria-label="About me"
-            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "about")}`}
           >
             <UserRound className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -70,7 +72,7 @@ export function Navbar({
 
           <Button
             aria-label="Resume"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "resume")}`}
           >
             <FileUser className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
@@ -80,7 +82,7 @@ export function Navbar({
 
           <Button
             aria-label="Contact Me"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle}`}
+            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "contact")}`}
           >
             <Mail className="size-5 xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">

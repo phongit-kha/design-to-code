@@ -15,11 +15,13 @@ const temp: CardDetails = {
 
 export function ProjectSection({
   className = "",
+  ref,
 }: {
   className?: string;
+  ref: any;
 }): React.JSX.Element {
   return (
-    <div className={cn("mt-16 w-full", className)}>
+    <div ref={ref} className={cn("mt-16 w-full", className)}>
       <FadeInAnimation>
         <p className="flex w-fit items-center gap-2 rounded-sm border border-t-opp-medium bg-base px-4 py-2 text-sm font-bold text-t-medium">
           <Sparkles className="size-4 stroke-2" /> Project
