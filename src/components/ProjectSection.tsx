@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Sparkles } from "lucide-react";
 import { CardDetails, ProjectCard } from "./ProjectCard";
-import { FadeInAnimation } from "./animation/fadeInAnimation";
+import { FadeInAnimation } from "./animation/FadeInAnimation";
 
 const temp: CardDetails = {
   projectName: "Project name",

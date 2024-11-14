@@ -1,20 +1,15 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import {
-  ArrowDown,
-  Download,
   Facebook,
   FileUser,
   Github,
-  LayoutGrid,
   Linkedin,
   Mail,
   Send,
   Sparkles,
 } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import { FadeInAnimation } from "./animation/fadeInAnimation";
+import { FadeInAnimation } from "./animation/FadeInAnimation";
 
 export function ContactSection({
   className = "",

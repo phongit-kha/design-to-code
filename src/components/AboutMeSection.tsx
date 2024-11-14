@@ -4,12 +4,7 @@ import { cn } from "@/lib/utils";
 import { Download, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Tag } from "./ProjectCard";
-import {
-  FadeInAnimation,
-  fadeInAnimationVariants,
-} from "./animation/fadeInAnimation";
-
-import { motion } from "framer-motion";
+import { FadeInAnimation } from "./animation/FadeInAnimation";
 
 export function AboutMe({
   className = "",

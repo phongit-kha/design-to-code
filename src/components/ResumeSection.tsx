@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Sparkles } from "lucide-react";
-import { FadeInAnimation } from "./animation/fadeInAnimation";
+import { FadeInAnimation } from "./animation/FadeInAnimation";
 
 export function ResumeSection({
   className = "",
