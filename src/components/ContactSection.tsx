@@ -19,7 +19,7 @@ export function ContactSection({
   ref: any;
 }): React.JSX.Element {
   return (
-    <div ref={ref} className={cn("mt-16 w-full", className)}>
+    <div id="contact" ref={ref} className={cn("w-full pt-24", className)}>
       <FadeInAnimation>
         <p className="flex w-fit items-center gap-2 rounded-sm border border-t-opp-medium bg-base px-4 py-2 text-sm font-bold text-t-medium">
           <Sparkles className="size-4 stroke-2" /> Contact

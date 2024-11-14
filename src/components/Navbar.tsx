@@ -15,11 +15,12 @@ import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const IconStyle = (onFocus: boolean) =>
   onFocus
-    ? "bg-base-opp text-t-opp-bright lg:bg-transparent lg:text-t-bright border-[1px] border-stroke-controls-neutral "
-    : "text-t-disabled lg:dark:text-t-bright";
+    ? "bg-base-opp text-t-opp-bright lg:bg-transparent lg:text-t-bright lg:border-[1px] border-stroke-controls-neutral whitespace-nowrap "
+    : "text-t-disabled lg:dark:text-t-bright whitespace-nowrap";
 
 export function Navbar({
   className,
@@ -40,7 +41,8 @@ export function Navbar({
       <div className="flex h-fit items-center rounded-full bg-transparent shadow-lg backdrop-blur-md lg:w-full lg:justify-between lg:shadow-none lg:backdrop-blur-none xl:items-start">
         {/* Individual Nav Buttons */}
         <div className="flex xl:space-x-5">
-          <Button
+          <Link
+            href="#home"
             aria-label="Home"
             className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 focus-visible:text-t-bright lg:px-5 lg:py-2.5 lg:backdrop-blur-3xl ${IconStyle(activeSection === "home")}`}
           >
@@ -48,9 +50,10 @@ export function Navbar({
             <span hidden className="text-lg font-semibold xl:block">
               Home
             </span>
-          </Button>
+          </Link>
 
-          <Button
+          <Link
+            href="#project"
             aria-label="Project"
             className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "projects")}`}
           >
@@ -58,9 +61,10 @@ export function Navbar({
             <span hidden className="text-lg font-semibold xl:block">
               Project
             </span>
-          </Button>
+          </Link>
 
-          <Button
+          <Link
+            href="#about"
             aria-label="About me"
             className={`peer size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "about")}`}
           >
@@ -68,9 +72,10 @@ export function Navbar({
             <span hidden className="text-lg font-semibold xl:block">
               About me
             </span>
-          </Button>
+          </Link>
 
-          <Button
+          <Link
+            href="#resume"
             aria-label="Resume"
             className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "resume")}`}
           >
@@ -78,9 +83,10 @@ export function Navbar({
             <span hidden className="text-lg font-semibold xl:block">
               Resume
             </span>
-          </Button>
+          </Link>
 
-          <Button
+          <Link
+            href="#contact"
             aria-label="Contact Me"
             className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "contact")}`}
           >
@@ -88,12 +94,12 @@ export function Navbar({
             <span hidden className="text-lg font-semibold xl:block">
               Contact
             </span>
-          </Button>
+          </Link>
         </div>
-        <div className="lg:flex lg:space-x-4">
+        <div className="flex items-center lg:space-x-4">
           <Button
             aria-label="Theme Toggle"
-            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-110 ${IconStyle}`}
+            className={`size-auto self-center rounded-[1.125rem] p-3 shadow-none transition-all duration-300 hover:text-t-bright focus-visible:scale-110 ${IconStyle(false)}`}
             onClick={() => {
               themeColor == "light" ? setTheme("light") : setTheme("dark");
               themeColor == "light"
@@ -106,9 +112,10 @@ export function Navbar({
           </Button>
 
           {/* Highlighted Chat Icon */}
-          <Button
+          <Link
+            href="#contact"
             aria-label="Chat"
-            className="size-auto rounded-[1.125rem] bg-gradient-to-tl from-accent to-secondary p-2.5 transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:rounded-md lg:px-5"
+            className="flex size-auto items-center gap-2 whitespace-nowrap rounded-[1.125rem] bg-gradient-to-tl from-accent to-secondary p-2.5 transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:rounded-md lg:px-5"
           >
             <span
               hidden
@@ -117,7 +124,7 @@ export function Navbar({
               Let's Talk
             </span>
             <MessageSquareMore className="size-5 text-t-opp-bright lg:stroke-[3px]" />
-          </Button>
+          </Link>
         </div>
       </div>
     </nav>

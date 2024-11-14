@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 import { Facebook, FileUser, Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 export function Profile({
   className = "",
@@ -14,7 +15,7 @@ export function Profile({
   return (
     <div
       className={cn(
-        "top-12 h-auto w-full min-w-80 max-w-96 space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8 lg:sticky lg:px-12 lg:pb-8 lg:pt-12",
+        "top-12 flex h-auto w-full min-w-80 max-w-96 flex-col space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8 lg:sticky lg:px-12 lg:pb-8 lg:pt-12",
         className,
       )}
     >
@@ -60,12 +61,13 @@ export function Profile({
         <IconButton icon="Github" tooltip="Github" label="Github Profile" />
         <IconButton icon="FileUser" tooltip="Resume" label="Resume file" />
       </div>
-      <Button
+      <Link
+        href="#contact"
         aria-label="go to contact phongit"
-        className="h-auto w-full rounded-md bg-gradient-to-r from-accent to-secondary py-2 text-lg font-bold text-base-tint transition-transform duration-300 hover:scale-105 focus:scale-110"
+        className="h-auto w-full rounded-md bg-gradient-to-r from-accent to-secondary py-2 text-center text-lg font-bold text-base-tint transition-transform duration-300 hover:scale-105 focus:scale-110"
       >
         Let's Work Together!
-      </Button>
+      </Link>
     </div>
   );
 }
@@ -79,8 +81,6 @@ const IconButton = ({
   tooltip: string;
   label: string;
 }): React.JSX.Element => {
-  const buttonStyle: string =
-    "border-t-opp-medium size-10 lg:size-12 border-[0.5px] transition-transform duration-300 hover:scale-110 focus:scale-110";
   const Icon = {
     Facebook: <Facebook />,
     FileUser: <FileUser />,
@@ -89,7 +89,10 @@ const IconButton = ({
     Mail: <Mail />,
   };
   return (
-    <Button className={buttonStyle} aria-label="facebook contact">
+    <Button
+      className="aspect-square h-auto w-1/6 min-w-10 max-w-12 border-[0.5px] border-t-opp-medium transition-transform duration-300 hover:scale-110 focus:scale-110"
+      aria-label="facebook contact"
+    >
       {Icon[icon]}
     </Button>
   );

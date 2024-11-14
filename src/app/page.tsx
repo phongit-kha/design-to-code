@@ -34,20 +34,21 @@ export default function Home() {
     else if (contactInView) setActiveSection("contact");
     else if (homeInview) setActiveSection("home");
     else if (resumeInView) setActiveSection("resume");
+    else setActiveSection("");
   }, [aboutInView, projectsInView, contactInView, homeInview, resumeInView]);
 
   return (
-    <div className="flex flex-col items-center p-4 lg:px-20 lg:pt-6">
+    <div id="home" className="flex flex-col items-center p-4 lg:px-20 lg:pt-6">
       <div className="flex w-full flex-col items-center gap-20 lg:flex-row lg:items-start 2xl:justify-center">
         <Profile />
         <div className="w-full pb-20">
           <Navbar activeSection={activeSection} />
           <section>
             <HomeSection ref={homeRef} />
-            <ProjectSection ref={projectsRef} className="mt-48" />
-            <AboutMe ref={aboutRef} className="mt-48" />
-            <ResumeSection ref={resumeRef} className="mt-48" />
-            <ContactSection ref={contactRef} className="mt-48" />
+            <ProjectSection ref={projectsRef} className="mt-12" />
+            <AboutMe ref={aboutRef} className="mt-12" />
+            <ResumeSection ref={resumeRef} className="mt-12" />
+            <ContactSection ref={contactRef} className="mt-12" />
           </section>
         </div>
       </div>
