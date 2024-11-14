@@ -202,18 +202,17 @@ const FavoriteTools = (): React.JSX.Element => {
       </FadeInAnimation>
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 xl:grid-cols-5">
         {tools.map((tool, index) => (
-          <FadeInAnimation index={index}>
-            <div
-              key={index}
-              className="flex flex-col items-center space-y-4 rounded-lg border border-t-opp-medium p-4"
-            >
-              <img
-                src={tool.icon}
-                alt={`${tool.name} icon`}
-                className="h-12 w-12"
-              />
-              <h6 className="font-semibold text-t-bright">{tool.name}</h6>
-            </div>
+          <FadeInAnimation
+            index={index}
+            key={index}
+            className="flex flex-col items-center space-y-4 rounded-lg border border-t-opp-medium p-4"
+          >
+            <img
+              src={tool.icon}
+              alt={`${tool.name} icon`}
+              className="h-12 w-12"
+            />
+            <h6 className="font-semibold text-t-bright">{tool.name}</h6>
           </FadeInAnimation>
         ))}
       </div>

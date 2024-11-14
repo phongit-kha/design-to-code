@@ -26,35 +26,33 @@ export function AboutMe({
       <div className="py-12">
         {/* Stats Section */}
         <div className="mb-10 flex flex-col items-center justify-around gap-8 lg:flex-row">
-          <FadeInAnimation>
-            <div className="w-full rounded-md border-[0.5px] border-t-opp-medium p-6 text-center lg:w-1/3">
-              <p className="bg-gradient-to-r from-t-accent to-t-secondary bg-clip-text text-5xl font-bold text-transparent">
-                40+
-              </p>
-              <p className="text-lg font-semibold text-t-bright">
-                Happy clients
-              </p>
-            </div>
+          <FadeInAnimation className="w-full rounded-md border-[0.5px] border-t-opp-medium p-6 text-center">
+            <p className="bg-gradient-to-r from-t-accent to-t-secondary bg-clip-text text-5xl font-bold text-transparent">
+              40+
+            </p>
+            <p className="text-lg font-semibold text-t-bright">Happy clients</p>
           </FadeInAnimation>
-          <FadeInAnimation index={2}>
-            <div className="w-full rounded-md border-[0.5px] border-t-opp-medium p-6 text-center lg:w-1/3">
-              <p className="bg-gradient-to-r from-t-accent to-t-secondary bg-clip-text text-5xl font-bold text-transparent">
-                2+
-              </p>
-              <p className="text-lg font-semibold text-t-bright">
-                Years of experience
-              </p>
-            </div>
+
+          <FadeInAnimation
+            index={2}
+            className="w-full rounded-md border-[0.5px] border-t-opp-medium p-6 text-center"
+          >
+            <p className="bg-gradient-to-r from-t-accent to-t-secondary bg-clip-text text-5xl font-bold text-transparent">
+              2+
+            </p>
+            <p className="text-lg font-semibold text-t-bright">
+              Years of experience
+            </p>
           </FadeInAnimation>
-          <FadeInAnimation index={3}>
-            <div className="w-full rounded-md border-[0.5px] border-t-opp-medium p-6 text-center lg:w-1/3">
-              <p className="bg-gradient-to-r from-t-accent to-t-secondary bg-clip-text text-5xl font-bold text-transparent">
-                50+
-              </p>
-              <p className="text-lg font-semibold text-t-bright">
-                Projects done
-              </p>
-            </div>
+
+          <FadeInAnimation
+            index={3}
+            className="w-full rounded-md border-[0.5px] border-t-opp-medium p-6 text-center"
+          >
+            <p className="bg-gradient-to-r from-t-accent to-t-secondary bg-clip-text text-5xl font-bold text-transparent">
+              50+
+            </p>
+            <p className="text-lg font-semibold text-t-bright">Projects done</p>
           </FadeInAnimation>
         </div>
 
@@ -118,143 +116,149 @@ export function AboutMe({
         </div>
 
         {/* Download CV Button */}
-        <FadeInAnimation>
-          <div className="mt-10 text-center">
-            <Link
-              href="project"
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-accent to-secondary px-5 py-2 text-lg font-bold text-t-opp-bright transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:w-fit"
-            >
-              Download Resume <Download className="size-4 stroke-[3px]" />
-            </Link>
-          </div>
+
+        <FadeInAnimation className="mt-10 text-center">
+          <Link
+            href="project"
+            className="flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-accent to-secondary px-5 py-2 text-lg font-bold text-t-opp-bright transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:w-fit"
+          >
+            Download Resume <Download className="size-4 stroke-[3px]" />
+          </Link>
         </FadeInAnimation>
       </div>
       <div className="grid grid-cols-1 gap-8 text-t-bright lg:grid-cols-2 lg:py-12">
         {/* Frontend Development Card */}
-        <FadeInAnimation index={1}>
-          <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
-            <h4 className="text-2xl font-semibold text-t-bright">
-              Frontend development
-            </h4>
-            <div className="flex space-x-2">
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                UX/UI Design
-              </Tag>
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                Design to Code
-              </Tag>
-            </div>
-            <p className="text-t-bright">
-              I work with HTML/CSS, Framer and WordPress.
-            </p>
-            <img
-              src="/path/to/frontend-image.png"
-              alt="Frontend Development"
-              className="w-full rounded-md"
-            />
+
+        <FadeInAnimation
+          index={1}
+          className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
+        >
+          <h4 className="text-2xl font-semibold text-t-bright">
+            Frontend development
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              UX/UI Design
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Design to Code
+            </Tag>
           </div>
+          <p className="text-t-bright">
+            I work with HTML/CSS, Framer and WordPress.
+          </p>
+          <img
+            src="/path/to/frontend-image.png"
+            alt="Frontend Development"
+            className="w-full rounded-md"
+          />
         </FadeInAnimation>
 
         {/* Digital Art and Graphic Design Card */}
-        <FadeInAnimation index={3}>
-          <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
-            <h4 className="text-2xl font-semibold text-t-bright">
-              Digital art and graphic design
-            </h4>
-            <div className="flex space-x-2">
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                Illustrations
-              </Tag>
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                AI Experiments
-              </Tag>
-            </div>
-            <p className="text-t-bright">
-              I use Adobe Photoshop, Fresco and Blender to create illustrations
-              and 3D renders for my clients and stocks.
-            </p>
-            <img
-              src="/path/to/design-image.png"
-              alt="Graphic Design"
-              className="w-full rounded-md"
-            />
+
+        <FadeInAnimation
+          index={3}
+          className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
+        >
+          <h4 className="text-2xl font-semibold text-t-bright">
+            Digital art and graphic design
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Illustrations
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              AI Experiments
+            </Tag>
           </div>
+          <p className="text-t-bright">
+            I use Adobe Photoshop, Fresco and Blender to create illustrations
+            and 3D renders for my clients and stocks.
+          </p>
+          <img
+            src="/path/to/design-image.png"
+            alt="Graphic Design"
+            className="w-full rounded-md"
+          />
         </FadeInAnimation>
 
         {/* SEO/Digital Marketing Solutions Card */}
-        <FadeInAnimation index={5}>
-          <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
-            <h4 className="text-2xl font-semibold text-t-bright">
-              SEO/Digital marketing solutions
-            </h4>
-            <div className="flex space-x-2">
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                Social Media
-              </Tag>
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                Analytics
-              </Tag>
-            </div>
-            <p className="text-t-bright">
-              Social media content plans, media monitoring, email and text
-              messaging and search engine optimization.
-            </p>
-            <img
-              src="/path/to/marketing-image.png"
-              alt="Marketing Solutions"
-              className="w-full rounded-md"
-            />
+
+        <FadeInAnimation
+          index={5}
+          className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
+        >
+          <h4 className="text-2xl font-semibold text-t-bright">
+            SEO/Digital marketing solutions
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Social Media
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Analytics
+            </Tag>
           </div>
+          <p className="text-t-bright">
+            Social media content plans, media monitoring, email and text
+            messaging and search engine optimization.
+          </p>
+          <img
+            src="/path/to/marketing-image.png"
+            alt="Marketing Solutions"
+            className="w-full rounded-md"
+          />
         </FadeInAnimation>
 
         {/* Brand Identity Card */}
-        <FadeInAnimation index={7}>
-          <div className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6">
-            <h4 className="text-2xl font-semibold text-t-bright">
-              Brand identity
-            </h4>
-            <div className="flex space-x-2">
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                Logo Designs
-              </Tag>
-              <Tag
-                color="white"
-                className="border border-t-opp-medium bg-transparent text-t-bright"
-              >
-                Style Guides
-              </Tag>
-            </div>
-            <p className="text-t-bright">
-              I help my clients to develop a personality and brand voice, design
-              the brand look and logo.
-            </p>
-            <img
-              src="/path/to/brand-image.png"
-              alt="Brand Identity"
-              className="w-full rounded-md"
-            />
+        <FadeInAnimation
+          index={7}
+          className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
+        >
+          <h4 className="text-2xl font-semibold text-t-bright">
+            Brand identity
+          </h4>
+          <div className="flex space-x-2">
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Logo Designs
+            </Tag>
+            <Tag
+              color="white"
+              className="border border-t-opp-medium bg-transparent text-t-bright"
+            >
+              Style Guides
+            </Tag>
           </div>
+          <p className="text-t-bright">
+            I help my clients to develop a personality and brand voice, design
+            the brand look and logo.
+          </p>
+          <img
+            src="/path/to/brand-image.png"
+            alt="Brand Identity"
+            className="w-full rounded-md"
+          />
         </FadeInAnimation>
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,9 +21,11 @@ const fadeInAnimationVariants = {
 export function FadeInAnimation({
   index = 1,
   children,
+  className,
 }: {
   index?: number;
   children: React.ReactNode;
+  className?: string;
 }): React.JSX.Element {
   return (
     <motion.div
@@ -31,6 +34,7 @@ export function FadeInAnimation({
       whileInView="animate"
       viewport={{ once: true }}
       custom={index}
+      className={cn("", className)}
     >
       {children}
     </motion.div>
