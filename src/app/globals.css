@@ -72,3 +72,12 @@ body {
     --gradient-three: #8b6bc5;
   }
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--base-shade);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: var(--_radius-s);
+  background: linear-gradient(to top left, var(--accent), var(--secondary));
+}
