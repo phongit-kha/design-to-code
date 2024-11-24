@@ -39,9 +39,9 @@ export function ResumeSection({
                   2015 - 2016
                 </div>
                 <div className="lg:w-1/2">
-                  <h5 className="text-lg font-semibold text-t-bright">
+                  <h4 className="text-lg font-semibold text-t-bright">
                     Drawing Concentration
-                  </h5>
+                  </h4>
                   <p className="text-sm text-t-bright">
                     Course by{" "}
                     <span className="font-semibold">
@@ -63,9 +63,9 @@ export function ResumeSection({
                   2019 - 2021
                 </div>
                 <div className="lg:w-1/2">
-                  <h5 className="text-lg font-semibold text-t-bright">
+                  <h4 className="text-lg font-semibold text-t-bright">
                     UI/UX Design Specialization
-                  </h5>
+                  </h4>
                   <p className="text-sm text-t-bright">
                     Course by{" "}
                     <span className="font-semibold">
@@ -84,9 +84,9 @@ export function ResumeSection({
               <div className="flex flex-col items-start justify-between gap-4 lg:flex-row lg:items-center">
                 <div className="text-sm text-t-bright lg:w-1/4">2022</div>
                 <div className="lg:w-1/2">
-                  <h5 className="text-lg font-semibold text-t-bright">
+                  <h4 className="text-lg font-semibold text-t-bright">
                     UI/UX Designer
-                  </h5>
+                  </h4>
                   <p className="text-sm text-t-bright">
                     Course by <span className="font-semibold">Coursera</span>
                   </p>
@@ -116,9 +116,9 @@ export function ResumeSection({
                   2018 - 2019
                 </div>
                 <div className="lg:w-1/2">
-                  <h5 className="text-lg font-semibold text-t-bright">
+                  <h4 className="text-lg font-semibold text-t-bright">
                     Illustrator
-                  </h5>
+                  </h4>
                   <p className="text-sm text-t-bright">
                     in the <span className="font-semibold">Creative Mind</span>{" "}
                     agency
@@ -138,9 +138,9 @@ export function ResumeSection({
                   2019 - 2021
                 </div>
                 <div className="lg:w-1/2">
-                  <h5 className="text-lg font-semibold text-t-bright">
+                  <h4 className="text-lg font-semibold text-t-bright">
                     Graphic Designer
-                  </h5>
+                  </h4>
                   <p className="text-sm text-t-bright">
                     in the <span className="font-semibold">Moon Light</span>{" "}
                     agency
@@ -158,9 +158,9 @@ export function ResumeSection({
               <div className="flex flex-col items-start justify-between gap-4 lg:flex-row lg:items-center">
                 <div className="text-sm text-t-bright lg:w-1/4">2021 - now</div>
                 <div className="lg:w-1/2">
-                  <h5 className="text-lg font-semibold text-t-bright">
+                  <h4 className="text-lg font-semibold text-t-bright">
                     UI/UX Designer
-                  </h5>
+                  </h4>
                   <p className="text-sm text-t-bright">
                     in the <span className="font-semibold">Moon Light</span>{" "}
                     agency
@@ -214,7 +214,7 @@ const FavoriteTools = (): React.JSX.Element => {
               alt={`${tool.name} icon`}
               className="h-12 w-12"
             />
-            <h6 className="font-semibold text-t-bright">{tool.name}</h6>
+            <h4 className="font-semibold text-t-bright">{tool.name}</h4>
           </FadeInAnimation>
         ))}
       </div>

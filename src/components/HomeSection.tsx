@@ -21,10 +21,10 @@ export function HomeSection({
       <FadeInAnimation index={2}>
         <h1 className="mt-3 bg-gradient-to-r from-accent to-secondary bg-clip-text text-4xl font-extrabold text-transparent lg:text-6xl">
           I'm Phongit Khanthawisood, <br /> Full Stack Developer <br />
-          <span hidden className="text-3xl lg:block">
-            and Computer Engineering Student
-          </span>
         </h1>
+        <span hidden className="text-3xl font-bold lg:block">
+          and Computer Engineering Student
+        </span>
       </FadeInAnimation>
       <FadeInAnimation
         index={3}

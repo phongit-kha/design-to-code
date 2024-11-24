@@ -85,36 +85,34 @@ export function AboutMe({
           {/* Contact Section */}
           <div className="space-y-4 lg:w-1/3">
             <FadeInAnimation>
-              <h6>
+              <h3>
                 <small className="text-sm text-t-bright">Name</small>
-                <p className="text-lg font-semibold text-t-bright">
-                  Alex Walker
-                </p>
-              </h6>
+              </h3>
+              <p className="text-lg font-semibold text-t-bright">Alex Walker</p>
             </FadeInAnimation>
             <FadeInAnimation index={3}>
-              <h6>
+              <h3>
                 <small className="text-sm text-t-bright">Phone</small>
-                <p className="text-lg font-semibold text-t-bright">
-                  +1 212-708-9400
-                </p>
-              </h6>
+              </h3>
+              <p className="text-lg font-semibold text-t-bright">
+                +1 212-708-9400
+              </p>
             </FadeInAnimation>
             <FadeInAnimation index={5}>
-              <h6>
+              <h3>
                 <small className="text-sm text-t-bright">Email</small>
-                <p className="text-lg font-semibold text-t-bright">
-                  hello@yourdomain.com
-                </p>
-              </h6>
+              </h3>
+              <p className="text-lg font-semibold text-t-bright">
+                hello@yourdomain.com
+              </p>
             </FadeInAnimation>
             <FadeInAnimation index={6}>
-              <h6>
+              <h3>
                 <small className="text-sm text-t-bright">Location</small>
-                <p className="text-lg font-semibold text-t-bright">
-                  Odesa, Ukraine
-                </p>
-              </h6>
+              </h3>
+              <p className="text-lg font-semibold text-t-bright">
+                Odesa, Ukraine
+              </p>
             </FadeInAnimation>
           </div>
         </div>
@@ -137,9 +135,9 @@ export function AboutMe({
           index={1}
           className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
         >
-          <h4 className="text-2xl font-semibold text-t-bright">
+          <h3 className="text-2xl font-semibold text-t-bright">
             Frontend development
-          </h4>
+          </h3>
           <div className="flex space-x-2">
             <Tag
               color="white"
@@ -170,9 +168,9 @@ export function AboutMe({
           index={3}
           className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
         >
-          <h4 className="text-2xl font-semibold text-t-bright">
+          <h3 className="text-2xl font-semibold text-t-bright">
             Digital art and graphic design
-          </h4>
+          </h3>
           <div className="flex space-x-2">
             <Tag
               color="white"
@@ -204,9 +202,9 @@ export function AboutMe({
           index={5}
           className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
         >
-          <h4 className="text-2xl font-semibold text-t-bright">
+          <h3 className="text-2xl font-semibold text-t-bright">
             SEO/Digital marketing solutions
-          </h4>
+          </h3>
           <div className="flex space-x-2">
             <Tag
               color="white"
@@ -237,9 +235,9 @@ export function AboutMe({
           index={7}
           className="h-[620px] space-y-4 rounded-2xl border border-t-opp-medium p-6"
         >
-          <h4 className="text-2xl font-semibold text-t-bright">
+          <h3 className="text-2xl font-semibold text-t-bright">
             Brand identity
-          </h4>
+          </h3>
           <div className="flex space-x-2">
             <Tag
               color="white"

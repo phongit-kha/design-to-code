@@ -33,7 +33,7 @@ export function Profile({
       </div>
       <Image
         className="aspect-square w-full rounded-sm"
-        src="/profile/profile-icon.jpg"
+        src="/profile/profile.png"
         width={280}
         height={280}
         alt="tonnam profile picture"
