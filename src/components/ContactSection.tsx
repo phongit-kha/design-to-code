@@ -39,6 +39,7 @@ export function ContactSection({
             </label>
             <input
               type="text"
+              aria-label="your name"
               className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
               required
             />
@@ -49,6 +50,7 @@ export function ContactSection({
             </label>
             <input
               type="text"
+              aria-label="company name"
               className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
             />
           </FadeInAnimation>
@@ -58,6 +60,7 @@ export function ContactSection({
             </label>
             <input
               type="email"
+              aria-label="email address"
               className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
               required
             />
@@ -69,6 +72,7 @@ export function ContactSection({
             <input
               type="tel"
               placeholder="Phone Number*"
+              aria-label="phone number"
               className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
               required
             />
@@ -81,12 +85,14 @@ export function ContactSection({
           <textarea
             className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
             rows={4}
+            aria-label="a few words"
             required
           ></textarea>
         </FadeInAnimation>
         <FadeInAnimation>
           <button
             type="submit"
+            aria-label="submit"
             className="flex items-center gap-2 rounded-full bg-gradient-to-tl from-accent to-secondary px-6 py-3 font-semibold text-base-tint"
           >
             Send Message <Send className="size-5" />
