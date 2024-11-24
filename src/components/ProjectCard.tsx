@@ -30,7 +30,7 @@ export function ProjectCard({
 }): React.JSX.Element {
   return (
     <Dialog>
-      <DialogTrigger className="relative flex aspect-square w-full flex-row items-end rounded-md transition-all duration-300 ease-in hover:scale-105">
+      <DialogTrigger className="relative flex aspect-square w-full flex-row items-end rounded-md shadow-lg shadow-t-opp-medium transition-all duration-300 ease-in hover:scale-105">
         <Image
           className="absolute inset-full left-0 top-0 -z-10 rounded-md"
           src={cardDetails.imgUrl}
