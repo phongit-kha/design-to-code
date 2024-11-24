@@ -17,6 +17,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Tn.pik - Phongit Khanthawisood",
   description: "Phongit Khanthawisood Portfolio",
+  authors: { name: "Phongit Khanthawisood" },
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <title>Phongit Khanthawisood | tn.pik </title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} animate-fadeIn bg-base antialiased transition-all delay-300`}
