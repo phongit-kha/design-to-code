@@ -38,7 +38,7 @@ export function Navbar({
         className,
       )}
     >
-      <div className="flex h-fit items-center rounded-full bg-black bg-opacity-[0.03] shadow-lg backdrop-blur-md lg:w-full lg:justify-between lg:shadow-none lg:backdrop-blur-none xl:items-start">
+      <div className="flex h-fit items-center rounded-full bg-black bg-opacity-[0.03] shadow-lg backdrop-blur-md lg:w-full lg:justify-between lg:bg-transparent lg:shadow-none lg:backdrop-blur-none xl:items-start">
         {/* Individual Nav Buttons */}
         <div className="flex xl:space-x-5">
           <Link
