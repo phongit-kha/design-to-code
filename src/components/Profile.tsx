@@ -91,7 +91,7 @@ const IconButton = ({
   return (
     <Button
       className="aspect-square h-auto w-1/6 min-w-10 max-w-12 border-[0.5px] border-t-opp-medium transition-transform duration-300 hover:scale-110 focus:scale-110"
-      aria-label="facebook contact"
+      aria-label={icon}
     >
       {Icon[icon]}
     </Button>
