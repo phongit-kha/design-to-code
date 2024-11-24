@@ -12,6 +12,8 @@ const data: CardDetails[] = [
     imgUrl: "/project/project1.jpg",
     description:
       "•	Implemented an interactive event registration UI, handling over 68,000 users and increasing registration conversions by 30.6%.",
+    githubUrl: "https://github.com/esc-chula/gem-of-your-soul",
+    webUrl: "https://gemofyoursoul.larngear.org/",
   },
   {
     projectName: "Wiki Speed Race",
@@ -20,6 +22,8 @@ const data: CardDetails[] = [
     imgUrl: "/project/project2.png",
     description:
       "•	Designed and developed Wiki Speed Race, a game that enhances critical thinking and strategic problem-solving skills through rapid Wikipedia navigation.",
+    githubUrl: "https://github.com/popochangli/wiki-speed-race",
+    webUrl: "https://github.com/popochangli/wiki-speed-race",
   },
   {
     projectName: "Cu Get Reg",
@@ -28,6 +32,8 @@ const data: CardDetails[] = [
     imgUrl: "/project/project3.png",
     description:
       "•	Have no idea what courses to take? Don't know what this course is about? We got it covered. With CU Get Reg, we put all kinds of course data together so that you don't have to.",
+    githubUrl: "https://github.com/thinc-org/cugetreg",
+    webUrl: "https://cugetreg.com/",
   },
   {
     projectName: "Merge CP50",
@@ -36,17 +42,10 @@ const data: CardDetails[] = [
     imgUrl: "/project/project4.png",
     description:
       "•	Led a team of 6-person to create a web platform for student networking, achieving 86.7% participation from new students.",
+    githubUrl: "https://github.com/phongit-kha/merge-cp-50-buddy",
+    webUrl: "https://merge-cp-50-buddy.vercel.app/",
   },
 ];
-
-const temp: CardDetails = {
-  projectName: "Project name",
-  tag: ["Illustration", "3D Render"],
-  tagColor: "white",
-  imgUrl: "/profile/profile-icon.jpg",
-  description:
-    "This action cannot be undone. This will permanently delete youraccount and remove your data from our servers.",
-};
 
 export function ProjectSection({
   className = "",
