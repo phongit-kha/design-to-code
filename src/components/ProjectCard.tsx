@@ -30,12 +30,19 @@ export function ProjectCard({
 }): React.JSX.Element {
   return (
     <Dialog>
-      <DialogTrigger className="flex aspect-square w-full flex-row items-end rounded-md bg-[url('/profile/profile-icon.jpg')] bg-cover transition-all duration-300 ease-in hover:scale-105">
+      <DialogTrigger className="relative flex aspect-square w-full flex-row items-end rounded-md transition-all duration-300 ease-in hover:scale-105">
+        <Image
+          className="absolute inset-full left-0 top-0 -z-10 rounded-md"
+          src={cardDetails.imgUrl}
+          alt={cardDetails.projectName + " image"}
+          width={500}
+          height={500}
+        />
         <figcaption className="flex gap-2 px-7 py-5">
           <h5 className="hidden">{cardDetails.projectName}</h5>
-          {cardDetails.tag.map((index, item) => (
+          {cardDetails.tag.map((item, index) => (
             <Tag key={index} color={cardDetails.tagColor}>
-              item
+              {item}
             </Tag>
           ))}
         </figcaption>
@@ -43,11 +50,11 @@ export function ProjectCard({
       <DialogContent className="bg-[#111111]">
         <div className="max-h-xl absolute bottom-[110%] left-[50%] flex w-full max-w-sm -translate-x-1/2 justify-center text-5xl">
           <Image
-            src="/profile/profile-icon.jpg"
-            alt="project image"
+            src={cardDetails.imgUrl}
+            alt={cardDetails.projectName + " image"}
             className="size-full"
-            width={250}
-            height={250}
+            width={500}
+            height={500}
           />
         </div>
         <DialogHeader className="space-y-2.5 text-[#ebf0f7]">
@@ -55,9 +62,9 @@ export function ProjectCard({
             {cardDetails.projectName}
           </DialogTitle>
           <div className="flex gap-2">
-            {cardDetails.tag.map((index, item) => (
+            {cardDetails.tag.map((item, index) => (
               <Tag key={index} className="border">
-                item
+                {item}
               </Tag>
             ))}
           </div>

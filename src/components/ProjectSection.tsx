@@ -4,6 +4,41 @@ import { Sparkles } from "lucide-react";
 import { CardDetails, ProjectCard } from "./ProjectCard";
 import { FadeInAnimation } from "./animation/FadeInAnimation";
 
+const data: CardDetails[] = [
+  {
+    projectName: "Gem of Your Soul",
+    tag: ["Frontend", "Interactive Web"],
+    tagColor: "white",
+    imgUrl: "/project/project1.jpg",
+    description:
+      "•	Implemented an interactive event registration UI, handling over 68,000 users and increasing registration conversions by 30.6%.",
+  },
+  {
+    projectName: "Wiki Speed Race",
+    tag: ["Backend", "Node.JS"],
+    tagColor: "black",
+    imgUrl: "/project/project2.png",
+    description:
+      "•	Designed and developed Wiki Speed Race, a game that enhances critical thinking and strategic problem-solving skills through rapid Wikipedia navigation.",
+  },
+  {
+    projectName: "Cu Get Reg",
+    tag: ["Frontend", "Svelte Kit"],
+    tagColor: "black",
+    imgUrl: "/project/project3.png",
+    description:
+      "•	Have no idea what courses to take? Don't know what this course is about? We got it covered. With CU Get Reg, we put all kinds of course data together so that you don't have to.",
+  },
+  {
+    projectName: "Merge CP50",
+    tag: ["Full Stack", "Next.js"],
+    tagColor: "white",
+    imgUrl: "/project/project4.png",
+    description:
+      "•	Led a team of 6-person to create a web platform for student networking, achieving 86.7% participation from new students.",
+  },
+];
+
 const temp: CardDetails = {
   projectName: "Project name",
   tag: ["Illustration", "3D Render"],
@@ -33,10 +68,10 @@ export function ProjectSection({
         </h2>
       </FadeInAnimation>
       <div className="mt-10 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-12 2xl:grid-cols-4">
-        {[1, 4, 1, 4].map((index, item) => {
+        {data.map((item, index) => {
           return (
             <FadeInAnimation index={index}>
-              <ProjectCard cardDetails={temp} />
+              <ProjectCard cardDetails={item} />
             </FadeInAnimation>
           );
         })}
