@@ -73,7 +73,7 @@ export function Navbar({
               About me
             </span>
           </Link>
-
+          {/* 
           <Link
             href="#resume"
             aria-label="Resume"
@@ -83,7 +83,7 @@ export function Navbar({
             <span hidden className="text-lg font-semibold xl:block">
               Resume
             </span>
-          </Link>
+          </Link> */}
 
           <Link
             href="#contact"

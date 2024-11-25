@@ -33,7 +33,7 @@ export default function Home() {
     else if (projectsInView) setActiveSection("projects");
     else if (contactInView) setActiveSection("contact");
     else if (homeInview) setActiveSection("home");
-    else if (resumeInView) setActiveSection("resume");
+    // else if (resumeInView) setActiveSection("resume");
     else setActiveSection("");
   }, [aboutInView, projectsInView, contactInView, homeInview, resumeInView]);
 
@@ -50,7 +50,6 @@ export default function Home() {
             <HomeSection ref={homeRef} />
             <ProjectSection ref={projectsRef} className="mt-12" />
             <AboutMe ref={aboutRef} className="mt-12" />
-            <ResumeSection ref={resumeRef} className="mt-12" />
             <ContactSection ref={contactRef} className="mt-12" />
           </section>
         </div>
