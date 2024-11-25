@@ -6,49 +6,55 @@ import { Button } from "./ui/button";
 const international = [
   {
     title: "Gold Medal: The Innovation Week in Africa 2021 (IWA 2021)",
-    describe: "bra bra bra",
+    describe: "Project: Development of a Facial Computer Control System.",
     date: "8 - 12 September 2021",
   },
   {
     title: "Bronze Prize: Seoul International Invention Fair 2021 (SIIF 2021)",
-    describe: "bra bra bra",
+    describe:
+      "Project: Sorting Social Media Posts for Help in Disasters With Machine Learning.",
     date: "1 -4 December 2021",
   },
   {
     title:
       "Honorable Mention: World Innovative Science Project Olympiad 2021 (WISPO 2021)",
-    describe: "Sorting Social Media Posts for Help in Disasters",
+    describe:
+      "Project: Sorting Social Media Posts for Help in Disasters With Machine Learning.",
     date: "11 - 17 December 2021",
   },
   {
     title: "Bronze Medal: International Youth STEM Tournament 2022 (IYST 2022)",
     describe:
-      "The Development of Web Application for Check Beta-Agonist in Pork using Deep Learning",
+      "Project: The Development of Web Application for Check Beta-Agonist in Pork using Deep Learning.",
     date: "28 March 2022",
   },
 ];
 const national = [
   {
     title: "Bronze Medel: Thailand Olympiad in Informatics 18 (TOI18)",
-    describe: "bra bra bra",
+    describe:
+      "Competed in the 18th Thailand Olympiad in Informatics (TOI18) as a representative.",
     date: "1 - 4 June 2022",
   },
   {
     title:
       "Certificate from Internationally Outstanding Inventors Award Ceremony 2022 (IOIAC'22)",
-    describe: "bra bra bra",
+    describe:
+      "Awarded a certificate for outstanding achievements in innovation at an international level.",
     date: "15 June 2022",
   },
   {
     title:
       "Gold Medal in regional & Honorable Mention: Young Scientist Competition 2022",
-    describe: "bra bra bra",
+    describe:
+      "Project: Development of a Model for Predicting Mutation in the COVID-19 using Transformers Model.",
     date: "7 March 2022",
   },
   {
     title:
       "Gold Medal in regional & Honorable Mention: Thailand Young Scientist Festival 18 (TYSF18)",
-    describe: "bra bra bra",
+    describe:
+      "Project: Development of a Model for Predicting Mutation in the COVID-19 using Transformers Model.",
     date: "18 August 2022",
   },
 ];
@@ -106,8 +112,8 @@ function AwardSection() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-semibold">{item.title}</h4>
-                      <time>{item.date}</time>
+                      <h4 className="text-lg font-semibold">{item.title}</h4>
+                      <time className="text-t-muted">{item.date}</time>
                       <p>{item.describe}</p>
                     </div>
                   </div>
@@ -130,8 +136,8 @@ function AwardSection() {
                     </div>
 
                     <div>
-                      <h4 className="text-xl font-semibold">{item.title}</h4>
-                      <p>{item.date}</p>
+                      <h4 className="text-lg font-semibold">{item.title}</h4>
+                      <time className="text-t-muted">{item.date}</time>
                       <p>{item.describe}</p>
                     </div>
                   </div>

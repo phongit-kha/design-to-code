@@ -33,6 +33,18 @@ export function AboutMe({
       </FadeInAnimation>
 
       <FadeInAnimation index={3}>
+        <p className="mt-8">
+          I’m Phongit, a web developer from Thailand.
+          <br /> Right now, I’m working on a project to help young people learn
+          new things and reach their goals.
+          <br />I want to make learning fun and easy for them, especially in the
+          world of technology.
+          <br />
+          <br />
+          Stay tuned for more updates on my project!
+        </p>
+      </FadeInAnimation>
+      <FadeInAnimation index={4}>
         <div className="relative mt-8 flex h-64 w-full items-center gap-4 overflow-x-scroll lg:justify-center lg:overflow-visible">
           {[
             { imageUrl: "image1.jpg", left: "-20%", rotate: "4deg", alt: "" },
@@ -57,13 +69,13 @@ export function AboutMe({
           })}
         </div>
       </FadeInAnimation>
-      <FadeInAnimation index={4}>
+      <FadeInAnimation index={5}>
         <AwardSection />
       </FadeInAnimation>
 
       {/* Download CV Button */}
 
-      <FadeInAnimation className="mt-4 text-center">
+      <FadeInAnimation className="mt-2 text-center">
         <Link
           href="project"
           className="flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-accent to-secondary px-5 py-2 text-lg font-bold text-t-opp-bright transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:w-fit"
