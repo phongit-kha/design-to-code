@@ -9,7 +9,7 @@ const data: CardDetails[] = [
     projectName: "Gem of Your Soul",
     tag: ["Frontend", "Interactive Web"],
     tagColor: "white",
-    imgUrl: "/project/project1.jpg",
+    imgUrl: "/project/project1.webp",
     description:
       "•	Implemented an interactive event registration UI, handling over 68,000 users and increasing registration conversions by 30.6%.",
     githubUrl: "https://github.com/esc-chula/gem-of-your-soul",
@@ -19,7 +19,7 @@ const data: CardDetails[] = [
     projectName: "Wiki Speed Race",
     tag: ["Backend", "Node.JS"],
     tagColor: "black",
-    imgUrl: "/project/project2.png",
+    imgUrl: "/project/project2.webp",
     description:
       "•	Designed and developed Wiki Speed Race, a game that enhances critical thinking and strategic problem-solving skills through rapid Wikipedia navigation.",
     githubUrl: "https://github.com/popochangli/wiki-speed-race",
@@ -29,7 +29,7 @@ const data: CardDetails[] = [
     projectName: "Cu Get Reg",
     tag: ["Frontend", "Svelte Kit"],
     tagColor: "black",
-    imgUrl: "/project/project3.png",
+    imgUrl: "/project/project3.webp",
     description:
       "•	Have no idea what courses to take? Don't know what this course is about? We got it covered. With CU Get Reg, we put all kinds of course data together so that you don't have to.",
     githubUrl: "https://github.com/thinc-org/cugetreg",
@@ -39,7 +39,7 @@ const data: CardDetails[] = [
     projectName: "Merge CP50",
     tag: ["Full Stack", "Next.js"],
     tagColor: "white",
-    imgUrl: "/project/project4.png",
+    imgUrl: "/project/project4.webp",
     description:
       "•	Led a team of 6-person to create a web platform for student networking, achieving 86.7% participation from new students.",
     githubUrl: "https://github.com/phongit-kha/merge-cp-50-buddy",

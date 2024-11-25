@@ -22,7 +22,7 @@ export function Profile({
       <div className="flex">
         <Image
           className="w-full min-w-16 max-w-20 rounded-sm"
-          src="/profile/profile-icon.jpg"
+          src="/profile/profile-icon.webp"
           width={60}
           height={60}
           alt="fav icon"
@@ -33,7 +33,7 @@ export function Profile({
       </div>
       <Image
         className="aspect-square w-full rounded-sm"
-        src="/profile/profile.png"
+        src="/profile/profile.webp"
         width={280}
         height={280}
         alt="tonnam profile picture"

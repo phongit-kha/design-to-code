@@ -47,16 +47,16 @@ export function AboutMe({
       <FadeInAnimation index={4}>
         <div className="relative mt-8 flex h-64 w-full items-center gap-4 overflow-x-scroll lg:justify-center lg:overflow-visible">
           {[
-            { imageUrl: "image1.jpg", left: "-20%", rotate: "4deg", alt: "" },
-            { imageUrl: "image2.jpg", left: "8%", rotate: "-3deg", alt: "" },
-            { imageUrl: "image4.jpg", left: "36%", rotate: "5deg", alt: "" },
-            { imageUrl: "image3.png", left: "64%", rotate: "-2deg", alt: "" },
-            { imageUrl: "image5.jpg", left: "92%", rotate: "5deg", alt: "" },
+            { imageUrl: "image1.webp", left: "-20%", rotate: "4deg", alt: "" },
+            { imageUrl: "image2.webp", left: "8%", rotate: "-3deg", alt: "" },
+            { imageUrl: "image4.webp", left: "36%", rotate: "5deg", alt: "" },
+            { imageUrl: "image3.webp", left: "64%", rotate: "-2deg", alt: "" },
+            { imageUrl: "image5.webp", left: "92%", rotate: "5deg", alt: "" },
           ].map((item, index) => {
             return (
               <Image
                 src={`/aboutme/${item.imageUrl}`}
-                alt={`Image`}
+                alt={`my activity image ${index + 1}`}
                 width={500}
                 height={500}
                 style={{

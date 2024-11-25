@@ -68,6 +68,7 @@ function AwardSection() {
       </h3>
       <div className="my-4 space-x-2">
         <Button
+          aria-label="switch to international awards"
           className={
             "rounded-full font-semibold shadow-t-opp-medium transition-transform duration-300 hover:scale-105 " +
             (awardsState
@@ -81,6 +82,7 @@ function AwardSection() {
           International
         </Button>
         <Button
+          aria-label="switch to national awards"
           className={
             "rounded-full font-semibold shadow-t-opp-medium transition-transform duration-300 hover:scale-105 " +
             (awardsState
