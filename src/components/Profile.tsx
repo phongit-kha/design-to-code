@@ -15,7 +15,7 @@ export function Profile({
   return (
     <div
       className={cn(
-        "top-12 flex h-auto w-full min-w-80 max-w-96 flex-col space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8 lg:sticky lg:px-12 lg:pb-8 lg:pt-12",
+        "top-12 z-10 flex h-auto w-full min-w-80 max-w-96 flex-col space-y-3 rounded-3xl border-[0.5px] border-t-opp-medium bg-base-tint p-8 lg:sticky lg:px-12 lg:pb-8 lg:pt-12",
         className,
       )}
     >

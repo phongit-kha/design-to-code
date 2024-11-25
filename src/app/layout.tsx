@@ -32,7 +32,7 @@ export default function RootLayout({
         <title>Phongit Khanthawisood | tn.pik </title>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} animate-fadeIn bg-base antialiased transition-all delay-300`}
+        className={`${geistSans.variable} ${geistMono.variable} animate-fadeIn overflow-x-hidden bg-base antialiased transition-all delay-300`}
       >
         <ThemeProvider
           attribute="class"

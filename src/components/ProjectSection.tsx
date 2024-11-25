@@ -66,7 +66,7 @@ export function ProjectSection({
           Check out my featured <br hidden className="lg:block" /> projects
         </h2>
       </FadeInAnimation>
-      <div className="mt-10 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-12 2xl:grid-cols-4">
+      <div className="mt-10 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 xl:gap-12">
         {data.map((item, index) => {
           return (
             <FadeInAnimation index={index}>

@@ -81,7 +81,7 @@ export function ProjectCard({
             target="_blank"
             href={cardDetails.githubUrl}
             aria-label="github repo"
-            className="flex aspect-square h-auto w-1/6 min-w-10 max-w-12 items-center justify-center rounded-full border-[0.5px] border-[#c7c6d3] bg-[#161616] text-[#c7c6d3] transition-transform duration-300 hover:scale-110 focus:scale-110"
+            className="flex aspect-square h-auto w-full min-w-10 max-w-12 items-center justify-center rounded-full border-[0.5px] border-[#c7c6d3] bg-[#161616] text-[#c7c6d3] transition-transform duration-300 hover:scale-110 focus:scale-110"
           >
             <Github />
           </Link>
@@ -89,7 +89,7 @@ export function ProjectCard({
             target="_blank"
             href={cardDetails.webUrl}
             aria-label="visit web"
-            className="flex size-auto w-full items-center gap-2 whitespace-nowrap rounded-[1.125rem] bg-gradient-to-tl from-[#e4b8bf] to-[#cec4ef] p-2.5 text-center text-lg font-semibold text-[#121319] transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:block lg:rounded-md lg:px-5"
+            className="w-full whitespace-nowrap rounded-md bg-gradient-to-tl from-[#e4b8bf] to-[#cec4ef] p-2.5 px-5 text-center text-lg font-semibold text-[#121319] transition-transform duration-300 hover:scale-105 focus-visible:scale-105"
           >
             Visite Web
           </Link>

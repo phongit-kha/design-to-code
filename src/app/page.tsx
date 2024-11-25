@@ -38,8 +38,11 @@ export default function Home() {
   }, [aboutInView, projectsInView, contactInView, homeInview, resumeInView]);
 
   return (
-    <div id="home" className="flex flex-col items-center p-4 lg:px-20 lg:pt-6">
-      <div className="flex w-full flex-col items-center gap-20 lg:flex-row lg:items-start 2xl:justify-center">
+    <div
+      id="home"
+      className="mx-auto flex max-w-[1440px] flex-col items-center p-4 lg:px-12 lg:pt-6 xl:px-20"
+    >
+      <div className="flex w-full flex-col items-center gap-20 lg:flex-row lg:items-start lg:gap-16 xl:gap-20 2xl:justify-center">
         <Profile />
         <div className="w-full pb-20">
           <Navbar activeSection={activeSection} />
