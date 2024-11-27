@@ -73,17 +73,6 @@ export function Navbar({
               About me
             </span>
           </Link>
-          {/* 
-          <Link
-            href="#resume"
-            aria-label="Resume"
-            className={`size-auto rounded-[1.125rem] p-3 shadow-none transition-all duration-300 focus-visible:scale-105 lg:px-5 lg:py-2.5 lg:backdrop-blur-md ${IconStyle(activeSection === "resume")}`}
-          >
-            <FileUser className="size-5 xl:hidden" />
-            <span hidden className="text-lg font-semibold xl:block">
-              Resume
-            </span>
-          </Link> */}
 
           <Link
             href="#contact"
