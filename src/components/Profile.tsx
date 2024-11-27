@@ -26,6 +26,7 @@ export function Profile({
           width={60}
           height={60}
           alt="fav icon"
+          loading="eager"
         />
         <p className="ml-2 self-center text-2xl font-bold">
           Phongit <br /> Khanthawisood
@@ -37,6 +38,7 @@ export function Profile({
         width={280}
         height={280}
         alt="tonnam profile picture"
+        loading="eager"
       />
       <h6 className="text-lg font-bold text-t-bright lg:text-xl">
         <small className="text-t-medium">Specialization:</small>

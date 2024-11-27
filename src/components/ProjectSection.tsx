@@ -69,7 +69,7 @@ export function ProjectSection({
       <div className="mt-10 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 xl:gap-12">
         {data.map((item, index) => {
           return (
-            <FadeInAnimation index={index}>
+            <FadeInAnimation key={item.description + index} index={index}>
               <ProjectCard cardDetails={item} />
             </FadeInAnimation>
           );

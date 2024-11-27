@@ -74,7 +74,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
   background: var(--base-shade);
   height: 5px;
 }

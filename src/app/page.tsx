@@ -5,7 +5,6 @@ import { HomeSection } from "@/components/HomeSection";
 import { Navbar } from "@/components/Navbar";
 import { Profile } from "@/components/Profile";
 import { ProjectSection } from "@/components/ProjectSection";
-import { ResumeSection } from "@/components/ResumeSection";
 import SvgBackground from "@/components/SvgBackground";
 import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
