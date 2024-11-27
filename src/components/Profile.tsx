@@ -1,9 +1,6 @@
 import Image from "next/image";
 import * as React from "react";
-import { Button } from "./ui/button";
-
 import { cn } from "@/lib/utils";
-
 import { Facebook, FileUser, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
@@ -61,7 +58,7 @@ export function Profile({
           label="LinkedIn contact"
         />
         <IconButton icon="Github" tooltip="Github" label="Github Profile" />
-        <IconButton icon="FileUser" tooltip="Resume" label="Resume file" />
+        <IconButton icon="FileUser" tooltip="CV" label="CV file" />
       </div>
       <Link
         href="#contact"
@@ -84,18 +81,53 @@ const IconButton = ({
   label: string;
 }): React.JSX.Element => {
   const Icon = {
-    Facebook: <Facebook />,
-    FileUser: <FileUser />,
-    Linkedin: <Linkedin />,
-    Github: <Github />,
-    Mail: <Mail />,
+    Facebook: {
+      icon: <Facebook className="size-5" />,
+      url: "https://www.facebook.com/pongaid.khathawisood.7",
+    },
+    FileUser: { icon: <FileUser className="size-5" />, url: "/cv/CV.pdf" },
+    Linkedin: {
+      icon: <Linkedin className="size-5" />,
+      url: "https://www.linkedin.com/in/phongit-khanthawisood-24931b236/",
+    },
+    Github: {
+      icon: <Github className="size-5" />,
+      url: "https://github.com/phongit-kha",
+    },
+    Mail: { icon: <Mail className="size-5" />, url: "#contact" },
   };
+
+  if (icon === "FileUser") {
+    return (
+      <Link
+        download
+        target="_blank"
+        href={Icon[icon].url}
+        className="flex aspect-square h-auto w-1/6 min-w-10 max-w-12 items-center justify-center rounded-full border-[0.5px] border-t-opp-medium transition-transform duration-300 hover:scale-110 focus:scale-110"
+        aria-label={icon}
+      >
+        {Icon[icon].icon}
+      </Link>
+    );
+  } else if (icon === "Mail") {
+    return (
+      <Link
+        href={Icon[icon].url}
+        className="flex aspect-square h-auto w-1/6 min-w-10 max-w-12 items-center justify-center rounded-full border-[0.5px] border-t-opp-medium transition-transform duration-300 hover:scale-110 focus:scale-110"
+        aria-label={icon}
+      >
+        {Icon[icon].icon}
+      </Link>
+    );
+  }
   return (
-    <Button
-      className="aspect-square h-auto w-1/6 min-w-10 max-w-12 border-[0.5px] border-t-opp-medium transition-transform duration-300 hover:scale-110 focus:scale-110"
+    <Link
+      target="_blank"
+      href={Icon[icon].url}
+      className="flex aspect-square h-auto w-1/6 min-w-10 max-w-12 items-center justify-center rounded-full border-[0.5px] border-t-opp-medium transition-transform duration-300 hover:scale-110 focus:scale-110"
       aria-label={icon}
     >
-      {Icon[icon]}
-    </Button>
+      {Icon[icon].icon}
+    </Link>
   );
 };
