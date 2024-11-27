@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { AwardDetails, AwardsCard } from "./AwardCard";
+import { FadeInAnimation } from "./animation/FadeInAnimation";
 
 const international: AwardDetails[] = [
   {
@@ -133,20 +134,24 @@ function AwardSection() {
           {awardsState
             ? international.map((item, index) => {
                 return (
-                  <AwardsCard
-                    index={index}
-                    length={international.length}
-                    awardsDetails={item}
-                  />
+                  <FadeInAnimation key={item.title} index={index}>
+                    <AwardsCard
+                      index={index}
+                      length={international.length}
+                      awardsDetails={item}
+                    />
+                  </FadeInAnimation>
                 );
               })
             : national.map((item, index) => {
                 return (
-                  <AwardsCard
-                    index={index}
-                    length={national.length}
-                    awardsDetails={item}
-                  />
+                  <FadeInAnimation key={item.title} index={index}>
+                    <AwardsCard
+                      index={index}
+                      length={national.length}
+                      awardsDetails={item}
+                    />
+                  </FadeInAnimation>
                 );
               })}
         </div>

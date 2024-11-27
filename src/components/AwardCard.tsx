@@ -37,11 +37,7 @@ export function AwardsCard({
 }): React.JSX.Element {
   return (
     <Dialog>
-      <DialogTrigger
-        key={awardsDetails.title}
-        style={{ animation: `fadeInAnimation 2s` }}
-        className="flex h-52 w-full space-x-8 rounded-sm p-4 outline-none transition-all ease-in hover:cursor-pointer hover:bg-base-tint focus:bg-base-tint md:h-32"
-      >
+      <DialogTrigger className="flex h-52 w-full space-x-8 rounded-sm p-4 outline-none transition-all ease-in hover:cursor-pointer hover:bg-base-tint focus:bg-base-tint md:h-32">
         <div className="h-full self-center">
           <div className="mask mask-circle relative left-[15%] top-[45%] z-10 h-2 w-2 bg-t-muted"></div>
           {index != length - 1 ? (
