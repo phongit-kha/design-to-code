@@ -30,75 +30,6 @@ export function ContactSection({
           Let's make something awesome together!
         </h2>
       </FadeInAnimation>
-      {/* Contact Form */}
-      <form className="space-y-6 py-12">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <FadeInAnimation>
-            <label className="mb-1 block text-sm font-medium text-t-bright">
-              Your Name*
-            </label>
-            <input
-              type="text"
-              aria-label="your name"
-              className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
-              required
-            />
-          </FadeInAnimation>
-          <FadeInAnimation>
-            <label className="mb-1 block text-sm font-medium text-t-bright">
-              Company Name
-            </label>
-            <input
-              type="text"
-              aria-label="company name"
-              className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
-            />
-          </FadeInAnimation>
-          <FadeInAnimation>
-            <label className="mb-1 block text-sm font-medium text-t-bright">
-              Email Address*
-            </label>
-            <input
-              type="email"
-              aria-label="email address"
-              className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
-              required
-            />
-          </FadeInAnimation>
-          <FadeInAnimation>
-            <label className="mb-1 block text-sm font-medium text-t-bright">
-              Phone Number*
-            </label>
-            <input
-              type="tel"
-              placeholder="Phone Number*"
-              aria-label="phone number"
-              className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
-              required
-            />
-          </FadeInAnimation>
-        </div>
-        <FadeInAnimation>
-          <label className="mb-1 block text-sm font-medium text-t-bright">
-            A Few Words*
-          </label>
-          <textarea
-            className="w-full border-b border-gray-400 bg-transparent py-2 text-t-bright focus:border-accent focus:outline-none"
-            rows={4}
-            aria-label="a few words"
-            required
-          ></textarea>
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <button
-            type="submit"
-            aria-label="submit"
-            className="flex items-center gap-2 rounded-full bg-gradient-to-tl from-accent to-secondary px-6 py-3 font-semibold text-base-tint"
-          >
-            Send Message <Send className="size-5" />
-          </button>
-        </FadeInAnimation>
-      </form>
 
       <div className="space-y-12 text-t-bright lg:py-12">
         {/* Social Media Icons */}
@@ -142,8 +73,9 @@ export function ContactSection({
         {/* Contact Message */}
         <FadeInAnimation>
           <p className="mt-3 bg-gradient-to-r from-accent to-secondary bg-clip-text text-3xl font-extrabold leading-tight text-transparent">
-            Want to know more about me, tell me about your project or just to
-            say hello? Drop me a line and I'll get back as soon as possible.
+            Want to know more about me, just to say hello?
+            <br />
+            Drop me a line and I'll get back as soon as possible.
           </p>
         </FadeInAnimation>
 
@@ -151,15 +83,15 @@ export function ContactSection({
         <FadeInAnimation className="flex flex-col justify-between space-y-4 border-t-[0.5px] border-t-opp-medium pt-6 text-left sm:flex-row sm:space-y-0">
           <div>
             <p className="text-sm font-semibold text-t-bright">Location</p>
-            <p className="text-t-bright">Odesa, Ukraine</p>
+            <p className="text-t-bright">Bangkok, Thailand</p>
           </div>
           <div>
             <p className="text-sm font-semibold text-t-bright">Phone</p>
-            <p className="text-t-bright">+1 212-708-9400</p>
+            <p className="text-t-bright">+66 989-414-552</p>
           </div>
           <div>
             <p className="text-sm font-semibold text-t-bright">Email</p>
-            <p className="text-t-bright">hello@alexwalker.com</p>
+            <p className="text-t-bright">phongit.kha@gmail.com</p>
           </div>
         </FadeInAnimation>
       </div>
