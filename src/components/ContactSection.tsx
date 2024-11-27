@@ -38,6 +38,7 @@ export function ContactSection({
           <FadeInAnimation className="w-full">
             <Link
               target="_blank"
+              aria-label="link to facebook"
               href={"https://www.facebook.com/pongaid.khathawisood.7"}
               className="flex aspect-[4/3] w-full items-center justify-center rounded-md border border-t-opp-medium text-t-placeholder transition-all duration-300 hover:scale-105 hover:border-base-opp hover:text-base-opp focus-visible:scale-105 focus-visible:border-base-opp focus-visible:text-base-opp"
             >
@@ -45,7 +46,10 @@ export function ContactSection({
             </Link>
           </FadeInAnimation>
           <FadeInAnimation index={3} className="w-full">
-            <button className="flex aspect-[4/3] w-full items-center justify-center rounded-md border border-t-opp-medium text-t-placeholder transition-all duration-300 hover:scale-105 hover:border-base-opp hover:text-base-opp focus-visible:scale-105 focus-visible:border-base-opp focus-visible:text-base-opp">
+            <button
+              aria-label="link to mail"
+              className="flex aspect-[4/3] w-full items-center justify-center rounded-md border border-t-opp-medium text-t-placeholder transition-all duration-300 hover:scale-105 hover:border-base-opp hover:text-base-opp focus-visible:scale-105 focus-visible:border-base-opp focus-visible:text-base-opp"
+            >
               <Mail aria-label="email" className="size-12" />
             </button>
           </FadeInAnimation>

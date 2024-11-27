@@ -68,6 +68,7 @@ export function CoCurricularSection(): React.JSX.Element {
                 key={item.title}
                 target="_blank"
                 href={item.url}
+                aria-label={"link to " + item.title}
                 className="group flex h-full w-full flex-col justify-between gap-2 rounded-sm p-6 outline-none transition-all ease-in hover:cursor-pointer hover:bg-base-tint focus:bg-base-tint"
               >
                 <Image

@@ -84,6 +84,7 @@ export function AboutMe({
           download
           target="_blank"
           href="/cv/CV.pdf"
+          aria-label="download cv"
           className="flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-accent to-secondary px-5 py-2 text-lg font-bold text-t-opp-bright transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:w-fit"
         >
           Download CV <Download className="size-4 stroke-[3px]" />
