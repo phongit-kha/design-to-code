@@ -37,14 +37,16 @@ export function Profile({
         alt="tonnam profile picture"
         loading="eager"
       />
-      <h6 className="text-lg font-bold text-t-bright lg:text-xl">
-        <small className="text-t-medium">Specialization:</small>
-        <br /> Fullstack Developer
-      </h6>
-      <h6 className="text-lg font-bold text-t-bright lg:text-xl">
-        <small className="text-t-medium">Base in:</small>
-        <br /> Bangkok, Thailand
-      </h6>
+      <div>
+        <h6 className="text-lg font-bold text-t-bright lg:text-xl">
+          <small className="text-t-medium">Role:</small>
+          <br /> Fullstack Developer
+        </h6>
+        <h6 className="text-lg font-bold text-t-bright lg:text-xl">
+          <small className="text-t-medium">Base in:</small>
+          <br /> Bangkok, Thailand
+        </h6>
+      </div>
       <div className="flex justify-between">
         <IconButton
           icon="Facebook"
