@@ -55,6 +55,7 @@ export function AboutMe({
           ].map((item, index) => {
             return (
               <Image
+                key={`activity image ${index + 1}`}
                 src={`/aboutme/${item.imageUrl}`}
                 alt={`my activity image ${index + 1}`}
                 width={500}
