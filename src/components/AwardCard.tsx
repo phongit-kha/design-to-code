@@ -67,7 +67,7 @@ export function AwardsCard({
           <DialogTitle className="text-left text-2xl font-bold">
             {awardsDetails.shortName}
             <br />
-            <small className="text-base text-[#a1a2a3]">
+            <small className="text-[#a1a2a3]">
               {awardsDetails.projectName}
             </small>
           </DialogTitle>
