@@ -59,7 +59,7 @@ export function Navbar({
           >
             <LayoutGrid className="size-5 stroke-[2.5px] xl:hidden" />
             <span hidden className="text-lg font-semibold xl:block">
-              Project
+              Projects
             </span>
           </Link>
 

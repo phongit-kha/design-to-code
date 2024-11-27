@@ -58,7 +58,7 @@ export function ProjectSection({
     <div id="project" ref={ref} className={cn("w-full pt-24", className)}>
       <FadeInAnimation>
         <p className="flex w-fit items-center gap-2 rounded-sm border border-t-opp-medium bg-base px-4 py-2 text-sm font-bold text-t-medium">
-          <Sparkles className="size-4 stroke-2" /> Project
+          <Sparkles className="size-4 stroke-2" /> Projects
         </p>
       </FadeInAnimation>
       <FadeInAnimation index={2}>
