@@ -7,6 +7,7 @@ import { Tag } from "./ProjectCard";
 import { FadeInAnimation } from "./animation/FadeInAnimation";
 import Image from "next/image";
 import AwardSection from "./AwardSection";
+import { CoCurricularSection } from "./CoCurricularSection";
 
 export function AboutMe({
   className = "",
@@ -76,7 +77,11 @@ export function AboutMe({
 
       {/* Download CV Button */}
 
-      <FadeInAnimation className="mt-2 text-center">
+      <FadeInAnimation index={6}>
+        <CoCurricularSection />
+      </FadeInAnimation>
+
+      <FadeInAnimation className="mt-8 text-center">
         <Link
           href="project"
           className="flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-accent to-secondary px-5 py-2 text-lg font-bold text-t-opp-bright transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:w-fit"
