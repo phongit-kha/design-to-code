@@ -87,7 +87,7 @@ const IconButton = ({
       icon: <Facebook className="size-5" />,
       url: "https://www.facebook.com/pongaid.khathawisood.7",
     },
-    FileUser: { icon: <FileUser className="size-5" />, url: "/cv/CV.pdf" },
+    FileUser: { icon: <FileUser className="size-5" />, url: "/cv/CV_Phongit.pdf" },
     Linkedin: {
       icon: <Linkedin className="size-5" />,
       url: "https://www.linkedin.com/in/phongit-khanthawisood-24931b236/",

@@ -40,7 +40,7 @@ export function HomeSection({
         <Link
           download
           target="_blank"
-          href="/cv/CV.pdf"
+          href="/cv/CV_Phongit.pdf"
           aria-label="download cv"
           className="mt-3 flex w-full items-center justify-center gap-2 rounded-md border border-stroke-controls-neutral px-5 py-2 text-lg font-bold text-t-bright transition-transform duration-300 hover:scale-105 focus-visible:scale-105 lg:mt-0 lg:w-fit lg:border-none"
         >

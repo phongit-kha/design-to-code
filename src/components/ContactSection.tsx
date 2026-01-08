@@ -79,7 +79,7 @@ export function ContactSection({
             <Link
               download
               target="_blank"
-              href={"/cv/CV.pdf"}
+              href={"/cv/CV_Phongit.pdf"}
               aria-label="CV"
               className="flex aspect-[4/3] w-full items-center justify-center rounded-md border border-t-opp-medium text-t-placeholder transition-all duration-300 hover:scale-105 hover:border-base-opp hover:text-base-opp focus-visible:scale-105 focus-visible:border-base-opp focus-visible:text-base-opp"
             >
